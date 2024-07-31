@@ -28,13 +28,10 @@ class SamsungProductTests(unittest.TestCase):
     def test_product_price(self):
         self.search_results.get_product_price()
 
+
     def tearDown(self):
         print("TearDown")
         self.base = SamsungSelenium()
         self.base.selenium_end(self.driver)
-
-    if __name__ == "__main":
-        unittest.main()
-        # ask kobi if we can remove it
 
         print("Test End")
