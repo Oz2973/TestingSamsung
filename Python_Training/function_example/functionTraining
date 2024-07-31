@@ -1,0 +1,20 @@
+from Python_Training import utils
+
+
+class functionTraining:
+
+    # # example of calling internal functions
+    #
+    # summary = math.pow(2,3)
+    # string_exam = "Hello"
+    # string_exam.index("ll",0,5)
+    #
+    # print(f"the sum of 2 power 3 is {summary}")
+
+
+    utils.print_string("Hi my name is john")
+    summary = utils.summary_calc(2,3)
+    print(f"the value of summary is {summary}")
+
+    summary_updated = summary+5
+    print(f'the value of the summary updated {summary_updated}')

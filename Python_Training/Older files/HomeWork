@@ -1,0 +1,17 @@
+class HomeWork:
+
+    fName = "Oz"
+    lName = "Gabay"
+
+    print(f"{fName} {lName}")
+    fNameL = len(fName)
+    lNameL = len(lName)
+    if lNameL > fNameL:
+        print(lName)
+    elif lNameL < fNameL:
+        print(fName)
+    elif lNameL == fNameL:
+        print("Equal values")
+    else:
+        print("Unexpected Error")
+    print("End of Test")

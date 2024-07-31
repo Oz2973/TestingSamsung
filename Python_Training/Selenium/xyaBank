@@ -1,0 +1,21 @@
+# https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login
+# press on the 2nd button
+from selenium.webdriver.common.by import By
+
+from Python_Training.Selenium.SeleniumBaseExample import SeleniumBaseExample
+
+selenium_base = SeleniumBaseExample()
+driver = selenium_base.selenium_start("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login")
+
+list_of_elements = driver.find_elements(By.CLASS_NAME,"btn.btn-primary.btn-lg")
+
+# x = 0
+# for element in list_of_elements:
+#     x = x + 1
+#     bank_Manager_Login = element
+#     bank_Manager_Login.click()
+
+list_of_elements[1].click()
+
+
+selenium_base.selenium_end(driver)
